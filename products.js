@@ -3,7 +3,7 @@ const PRODUCTS = {
     {
       id: "REMOTE PANEL V1",
       name: "REMOTE PANEL V1",
-      price: 90K,
+      price: 90000,
       lists: [
         "30 DAY ACCESS",
         "AIM DRAG ON",
@@ -18,7 +18,7 @@ const PRODUCTS = {
         {
       id: "REMOTE PANEL V2",
       name: "REMOTE PANEL V2",
-      price: 100.000,
+      price: 100000,
       lists: [
         "30 DAY ACCESS",
         "AIM DRAG ON",
@@ -33,7 +33,7 @@ const PRODUCTS = {
     {
       id: "REMOTE PANEL V3",
       name: "REMOTE PANEL V3",
-      price: 110.000,
+      price: 110000,
       lists: [
         "30 DAY ACCESS",
         "AIM DRAG ON",
@@ -48,7 +48,7 @@ const PRODUCTS = {
     {
       id: "REMASTER PANEL",
       name: "REMASTER PANEL",
-      price: 150.000,
+      price: 150000,
       lists: [
         "30 DAY ACCESS",
         "NO RECOIL",
@@ -65,7 +65,7 @@ const PRODUCTS = {
     {
       id: "TOOLS V1",
       name: "TOOLS V1",
-      price: 15.000,
+      price: 15000,
       lists: [
         "CLEAN MEMORY",
         "SET POINT ON",
@@ -80,7 +80,7 @@ const PRODUCTS = {
     {
       id: "TOOLS V2",
       name: "TOOLS V2",
-      price: 150.000,
+      price: 150000,
       lists: [
         "CLEAN MEMORY ON",
         "SET POINT ON",
