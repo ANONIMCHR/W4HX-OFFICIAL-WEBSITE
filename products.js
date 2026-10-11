@@ -3,7 +3,7 @@ const PRODUCTS = {
     {
       id: "REMOTE PANEL V1",
       name: "REMOTE PANEL V1",
-      price: 90.000,
+      price: 90K,
       lists: [
         "30 DAY ACCESS",
         "AIM DRAG ON",
