@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W4HX OFFICIAL — Store Panel & Tools</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261011-1857">
+</head>
+<body>
+
+<!-- ============ GALAXY BACKGROUND ============ -->
+<div class="galaxy-bg">
+  <canvas id="stars"></canvas>
+  <div class="earth-container">
+    <div class="earth"></div>
+    <div class="earth-glow"></div>
+  </div>
+  <div class="day-night-overlay"></div>
+</div>
+
+<!-- ============ HERO / HEADER ============ -->
+<header class="hero">
+  <div class="logo-wrap">
+    <img src="" id="brandLogo" alt="W4HX" class="logo">
+    <span class="logo-fallback" aria-hidden="true">W4HX</span>
+    <div class="logo-ring"></div>
+  </div>
+  <h1 class="brand" id="brandName">W4HX OFFICIAL</h1>
+  <p class="typing" id="typingText"></p>
+</header>
+
+<!-- ============ SHOP ============ -->
+<main class="container">
+  <h2 class="section-title">🪐 PANEL</h2>
+  <section class="shop-grid" id="panelGrid"></section>
+
+  <h2 class="section-title">🔧 TOOLS</h2>
+  <section class="shop-grid" id="toolsGrid"></section>
+
+  <!-- ============ MEMBER LIST BOX ============ -->
+  <section class="glass-box">
+    <div class="box-header">
+      <h3>👥 MEMBER W4HX</h3>
+      <button class="tab-btn" id="resellerTabBtn">Lihat Reseller Panel →</button>
+    </div>
+    <div class="list-content" id="memberList"></div>
+  </section>
+
+  <p class="warning">
+    ⚠️ WARNING: Hanya isi di list ini saja yang di percaya. Selain itu FAKE.
+    Admin/Owner tidak bertanggung jawab jika terjadi penipuan.
+  </p>
+
+  <!-- ============ SOCIAL MEDIA BOX ============ -->
+  <section class="glass-box">
+    <h3>🌐 SOCIAL MEDIA W4HX</h3>
+    <div class="social-grid">
+      <a href="#" target="_blank" rel="noopener noreferrer" class="social-btn tiktok" data-key="tiktok" aria-label="TikTok W4HX">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 7.2a6.8 6.8 0 0 1-4.2-1.5v8.1a6.2 6.2 0 1 1-5.4-6.1v3.2a3 3 0 1 0 2.2 2.9V2.5h3.2a3.7 3.7 0 0 0 3.6 3.3v1.4z"/></svg>
+        <span>TikTok</span><span class="social-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="social-btn instagram" data-key="instagram" aria-label="Instagram W4HX">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-dot" cx="17.5" cy="6.8" r="1"/></svg>
+        <span>Instagram</span><span class="social-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="social-btn discord" data-key="discord" aria-label="Discord W4HX">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.7 5.2a18 18 0 0 0-4.4-1.4l-.5 1a16.4 16.4 0 0 0-5.6 0l-.5-1a18 18 0 0 0-4.4 1.4C1.5 9.3.8 13.3 1.2 17.2a18 18 0 0 0 5.4 2.7l1.2-2a11 11 0 0 1-1.9-.9l.5-.4a12.8 12.8 0 0 0 11.2 0l.5.4a11 11 0 0 1-1.9.9l1.2 2a18 18 0 0 0 5.4-2.7c.5-4.5-.8-8.5-3.1-12zM8.7 14.8c-1.1 0-2-.9-2-2.1s.9-2.1 2-2.1 2 .9 2 2.1-.9 2.1-2 2.1zm6.6 0c-1.1 0-2-.9-2-2.1s.9-2.1 2-2.1 2 .9 2 2.1-.9 2.1-2 2.1z"/></svg>
+        <span>Discord</span><span class="social-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp" data-key="whatsapp" aria-label="WhatsApp W4HX">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6A11.8 11.8 0 0 0 20.5 3.5zM12 21a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-3.6 1 1-3.5-.2-.4A9.7 9.7 0 1 1 12 21zm5.3-7.3c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.5a11.2 11.2 0 0 0 4.3 3.8c.6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.8-.7 2-1.4s.3-1.3.2-1.4-.2-.3-.5-.4z"/></svg>
+        <span>WhatsApp</span><span class="social-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- ============ MODAL BELI ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="close-btn" id="closeModal">✕</button>
+    <h2 id="modalTitle">Form Pembelian</h2>
+
+    <!-- STEP 1: FORM DATA -->
+    <div class="modal-step" id="step1">
+      <label>Nama Lengkap</label>
+      <input type="text" id="inpNama" placeholder="Masukkan nama lengkap">
+
+      <label>Alamat Email</label>
+      <input type="email" id="inpEmail" placeholder="Masukkan email">
+
+      <label>Nomor Telepon</label>
+      <input type="tel" id="inpTelp" placeholder="Masukkan nomor telepon">
+
+      <label>Metode Pembayaran</label>
+      <div class="pay-methods">
+        <button class="pay-btn" data-pay="dana">DANA</button>
+        <button class="pay-btn" data-pay="gopay">GOPAY</button>
+        <button class="pay-btn" data-pay="ovo">OVO</button>
+        <button class="pay-btn" data-pay="qris">QRIS</button>
+      </div>
+
+      <div class="pay-info" id="payInfo"></div>
+
+      <label>Bukti Pembayaran (WAJIB 1 FOTO)</label>
+      <input type="file" id="inpBukti" accept="image/*">
+
+      <div class="tutorial">
+        <h4>📖 Tutorial Pembayaran</h4>
+        <ol>
+          <li>Pilih metode pembayaran di atas</li>
+          <li>Transfer sesuai nominal produk</li>
+          <li>Screenshot bukti pembayaran</li>
+          <li>Upload bukti di kolom atas</li>
+          <li>Klik "Kirim Bukti"</li>
+        </ol>
+      </div>
+
+      <button class="submit-btn" id="submitBtn">KIRIM BUKTI</button>
+    </div>
+
+    <!-- STEP 2: LOADING QRIS -->
+    <div class="modal-step hidden" id="stepLoading">
+      <div class="loader"></div>
+      <p>Memuat QRIS... <span id="countdown">10</span>s</p>
+    </div>
+
+    <!-- STEP 3: SUKSES -->
+    <div class="modal-step hidden" id="stepSuccess">
+      <div class="check">✓</div>
+      <h3>Bukti Terkirim!</h3>
+      <p>Pesanan kamu sedang diproses admin.</p>
+    </div>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="products.js"></script>
+<script src="script.js?v=20261011-1857"></script>
+</body>
+</html>
